@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>İletişim | Web Projem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="hakkimda.html">Hakkımda</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Bana Ulaşın</h1>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="isminiz" required><br><br>
+            <input type="email" id="email" placeholder="e-posta adresiniz" required><br><br>
+            <textarea id="message" placeholder="mesajınız"></textarea><br><br>
+            <button type="submit">Gönder</button>
+        </form>
+        <p id="responseMessage"></p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

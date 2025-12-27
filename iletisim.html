@@ -2,7 +2,8 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>İletişim</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim | Web Projem</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,14 +14,27 @@
             <li><a href="iletisim.html">İletişim</a></li>
         </ul>
     </nav>
+
     <main>
         <h1>Bana Ulaşın</h1>
+        <p>Lütfen aşağıdaki formu doldurarak benimle iletişime geçin.</p>
+        
         <form id="contactForm">
-            <input type="text" id="name" placeholder="Adınız" required><br><br>
+            <label for="name">Ad Soyad:</label>
+            <input type="text" id="name" placeholder="Adınız ve Soyadınız" required>
+
+            <label for="email">E-posta Adresi:</label>
+            <input type="email" id="email" placeholder="örnek@mail.com" required>
+
+            <label for="message">Mesajınız:</label>
+            <textarea id="message" rows="5" placeholder="Mesajınızı buraya yazın..."></textarea>
+
             <button type="submit">Gönder</button>
         </form>
+        
         <p id="responseMessage"></p>
     </main>
+
     <script src="script.js"></script>
 </body>
 </html>

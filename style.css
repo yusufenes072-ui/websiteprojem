@@ -1,17 +1,18 @@
-
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #e6f9ff; /* Açık Turkuaz Arka Plan */
+    color: #333;
 }
 
 /* Menü Tasarımı */
 nav {
-    background: #333;
+    background: #008C8C; /* Turkuaz Arka Plan */
     color: #fff;
     padding: 1rem;
+    border-bottom: 2px solid #006666; /* Koyu Turkuaz Sınır */
 }
 
 nav ul {
@@ -29,40 +30,91 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.1rem;
 }
 
 nav ul li a:hover {
-    color: #ff9900;
+    color: #ffcc00; /* Sarı Renk Hover */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-
+/* Ana İçerik */
 main {
-    padding: 20px;
-    max-width: 800px;
-    margin: 20px auto;
+    padding: 30px;
+    max-width: 900px;
+    margin: 40px auto;
     background: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
 }
 
+main h1 {
+    color: #008C8C;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
 
+main p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.8;
+}
+
+/* Form Elemanları */
 input, textarea {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
+    padding: 12px;
+    margin-bottom: 15px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 8px;
+    font-size: 1rem;
 }
 
+input:focus, textarea:focus {
+    border: 2px solid #008C8C;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 140, 140, 0.2);
+}
+
+/* Buton Tasarımı */
 button {
-    background: #333;
+    background: #008C8C; /* Turkuaz Renk */
     color: white;
-    padding: 10px 20px;
+    padding: 12px 25px;
     border: none;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    transition: background 0.3s ease;
 }
 
 button:hover {
-    background: #555;
+    background: #006666; /* Koyu Turkuaz Hover */
+    transform: scale(1.05);
+}
+
+/* Duyarlı Tasarım */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    main {
+        margin: 20px;
+    }
+
+    main h1 {
+        font-size: 1.8rem;
+    }
+
+    button {
+        width: 100%;
+    }
 }
